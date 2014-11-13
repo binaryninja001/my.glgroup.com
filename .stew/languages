@@ -1,0 +1,7 @@
+#Specify the language versions needed for your services. This hands off
+#the work to rvm and pythonbrew
+
+python 2.7.2
+ruby 1.9.3
+node v0.8.3
+

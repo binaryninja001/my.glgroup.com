@@ -1,0 +1,101 @@
+{
+    "apps": [
+        {
+            "text": "Vega",
+            "url": "https://vega.glgroup.com/vega/index.aspx",
+            "icon": "vega.jpg"
+        },
+        {
+            "text": "Salesforce"
+        },
+        {
+            "text": "Happenings",
+            "url": "https://happenings.glgroup.com",
+            "icon": "happenings.png"
+        },
+        {
+            "text": "Project Trends",
+            "url": "https://services.glgresearch.com/trends",
+            "icon": "projecttrends.png"
+        },
+        {
+            "text": "Mosaic",
+            "url": "https://vega.glgroup.com/mosaic/",
+            "icon": "mosaic.png"
+        },
+        {
+            "text": "Employee Directory",
+            "url": "https://services.glgresearch.com/employee-directory",
+            "icon": "glgemployeedirectory.png"
+        },
+        {
+            "text": "Microsites",
+            "url": "http://services.glgresearch.com/customers/create",
+            "icon": "microsite.png"
+        },
+        {
+            "text": "Taxonomy",
+            "url": "http://services.glgresearch.com/taxonomy/index.html",
+            "icon": "taxonomy.png",
+            "style": "border: solid 1px lightgrey;"
+        },
+        {
+            "text": "Tableau",
+            "url": "https://tableau.glgroup.com",
+            "icon": "tableau.jpg",
+            "style": "border: solid 1px lightgrey;"
+        },
+        {
+            "text": "CMTravel",
+            "url": "http://services.glgresearch.com/cm-travel-plans/",
+            "icon": "cmtravel.png"
+        },
+        {
+            "text": "Human Resources",
+            "url": "http://hr-entry.glgroup.com",
+            "icon": "glg-human-resources.png"
+        },
+        {
+            "text": "My Face",
+            "url": "https://myface.glgroup.com/",
+            "icon": "myface.png"
+        },
+        {
+            "text": "Contacts",
+            "url": "http://services.glgresearch.com/contacts/",
+            "icon": "contacts.png"
+        },
+        {
+            "text": "HQ Event Request",
+            "url": "https://services.glgresearch.com/glghqevent/",
+            "icon": "glghqevent.png"
+        },
+        {
+            "text": "Concur"
+        },
+        {
+            "text": "Fusion"
+        },
+        {
+            "text": "JobVite",
+            "style": "border: solid 1px lightgrey;"
+        },
+        {
+            "text": "Webmail"
+        },
+        {
+            "text": "Zoom"
+        },
+        {
+            "text": "eForms"
+        },
+        {
+            "text": "RoomFinder"
+        },
+        {
+            "text": "<span style='color: rgb(250,50,25);'>&#149;</span>&nbsp;App Store&nbsp;&nbsp;",
+            "url": "https://services.glgresearch.com/apps",
+            "icon": "apps.jpg"
+        }
+    ]
+}

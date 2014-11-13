@@ -1,0 +1,4 @@
+#this is an environment file, it will be merged in with the generated
+#.stew/profile and is a great place to set environment variables
+#for example
+export APP_DIRECTORY=#{@global_options.directory}

@@ -1,0 +1,14 @@
+env:
+    -
+        server_os: Ubuntu
+        server_version: 11.10
+        server_disk_size_gb: 1
+        number_of_servers: 2
+        number_of_cpu: 4
+        server_memory_gb: 16
+        load_balancer_server_port: 9090
+        load_balancer_port: 80
+        load_balancer_monitor: /
+        stew: true
+        clone_directory: symplified-sso
+        bootstrap_shell_command: sudo -u svcauto make default

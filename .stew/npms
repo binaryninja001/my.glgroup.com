@@ -1,0 +1,4 @@
+#install all your node packages here
+coffee-script
+less
+handlebars

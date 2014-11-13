@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+require 'webrick'
+
+class Hello < WEBrick::HTTPServlet::AbstractServlet
+  def do_GET(request, response)
+    response['ContentType'] = 'text/plain'
+    response.body = "Hello from #{$$}\n"
+  end
+end
+server = WEBrick::HTTPServer.new(:Port => ARGV[0].to_i)
+server.mount '/', Hello
+trap "INT" do 
+  server.shutdown
+end
+trap "TERM" do 
+  server.shutdown
+end
+server.start
+
+
