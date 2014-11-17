@@ -275,8 +275,8 @@ if (strpos($referer, 'redirect_url') !== false) {
 }
 
 // Uncomment to emulate internal SSO app list
-//$spAppsText = file_get_contents('sso_example.json');
-//$spApps = json_decode($spAppsText, true);
+// $spAppsText = file_get_contents('sso_example.json');
+// $spApps     = json_decode($spAppsText, true);
 
 // Add apps specified in portal_content.json
 $jsonAppsText   = file_get_contents('portal_content.json');
