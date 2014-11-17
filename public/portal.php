@@ -59,8 +59,8 @@
     /* Put this on top of the blurred layer */
   position: relative;
   z-index: 100;
-  background: rgb(0,0,0); /* for IE */
-  background: rgba(0,0,0,0.65);
+  background: rgb(255,255,255); /* for IE */
+  background: rgba(255,255,255,0.45);
   padding-top: 3%;
 }
 
