@@ -9,82 +9,21 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-
   <title>MyGLG</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <style>
-  body, #icons-background
-  {
-  background: url(<?php displayBackground();?>) no-repeat center center fixed;
-  /*<?php displayBackground();?>*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center bottom;
-  background-attachment: fixed;
-  height: 100%;
-  font-family: 'Helvetica Nueu', Helvetica, sans-serif;
-  text-align: center;
-  font-size: 1.6vh;
-  font-weight: 300;
-  margin: 0px;
-  padding: 0px;
-  }
-
-#icons_container {
-  position: relative;
-}
-
-#icons-background {
- /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
-  position: absolute;
-  top: 0px;
-  right: -15px;
-  bottom: 0px;
-  left: -15px;
-  z-index: 99;
-  /* Pull the background 70px higher to the same place as #bg's */
-  background-position: center -0px;
-  padding: 0px;
-  margin: 0px!important;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  filter: url('#blur'); /* for Firefox */
-}
-
-#icons-themselves {
-    /* Put this on top of the blurred layer */
-  position: relative;
-  z-index: 100;
-  background: rgb(0,0,0); /* for IE */
-  background: rgba(0,0,0,0.65);
-  padding-top: 3%;
-}
-
-  </style>
 </head>
 
 <body>
 <?php include_once ("analyticstracking.php")?>
 <div class="container">
   <div id="title" class="row">
-    <img src="img/LOGO_MYGLG.svg"></img>
+    <img src="img/glg-sso-logo.png"></img>
   </div>
 
-  <div id="icons_container" >
-    <div id="icons-background"><svg xmlns="http://www.w3.org/2000/svg"  version="1.1">
-<defs>
-<filter id="blur">
-<feGaussianBlur stdDeviation="5"/>
-</filter>
-</defs>
-</svg></div>
-      <div id="icons-themselves" class="row">
+  <div id="icons" class="row">
+
 <?php
 
 if (!function_exists('getallheaders')) {
@@ -162,7 +101,7 @@ function writeSinglePointLinkHtml($spApps, $appName, $style) {
 			$app = $spApps[$i];
 			if ($appName == $app['text']) {
 				$partialFileName = strtolower($app["text"]);
-				$imageFileName   = strtolower($partialFileName.".svg");
+				$imageFileName   = strtolower($partialFileName.".jpg");
 				writeLinkHtml($app["url"], $imageFileName, $app["text"], $style);
 				return true;
 			}
@@ -178,7 +117,7 @@ function writeLinkHtml($appUrl, $imageFileName, $appText, $style) {
 	$imgPath = "./img/";
 	$path    = $imgPath.$imageFileName;
 	if (!file_exists($path)) {
-		$path = $imgPath."default.svg";
+		$path = $imgPath."default.png";
 	}
 
 	//print icon image
@@ -277,66 +216,25 @@ if (strpos($referer, 'redirect_url') !== false) {
 }
 
 // Uncomment to emulate internal SSO app list
-// $spAppsText = file_get_contents('sso_example.json');
-// $spApps     = json_decode($spAppsText, true);
+//$spAppsText = file_get_contents('sso_example.json');
+//$spApps = json_decode($spAppsText, true);
 
 // Add apps specified in portal_content.json
 $jsonAppsText   = file_get_contents('portal_content.json');
 $jsonApps       = json_decode($jsonAppsText, true);
 $renderedSpApps = array();
-// if (($uname != null && $uname != "error") && ($jsonApps["apps"] != null)) {
-for ($i = 0; $i < sizeof($jsonApps["apps"]); $i++) {
-	$app = $jsonApps["apps"][$i];
+if (($uname != null && $uname != "error") && ($jsonApps["apps"] != null)) {
+	for ($i = 0; $i < sizeof($jsonApps["apps"]); $i++) {
+		$app = $jsonApps["apps"][$i];
 
-	if ($app["url"] != "" && $app["icon"] != "") {
-		writeLinkHtml($app["url"], $app["icon"], $app["text"], $app["style"]);
-	} else {
-		$success                      = writeSinglePointLinkHtml($spApps, $app['text'], $app['style']);
-		$renderedSpApps[$app['text']] = true;
-	}
-}
-}
-
-//BEGIN RANDOM BACKGROUND
-
-$val = null;
-
-function displayBackground() {
-	$dir     = 'img/bg/';
-	$cnt     = 0;
-	$bgArray = array();
-
-	/*if we can load the directory*/
-	if ($handle = opendir($dir)) {
-
-		/* Loop through the directory here */
-		while (false !== ($entry = readdir($handle))) {
-
-			$pathToFile = $dir.$entry;
-			if (is_file($pathToFile))//if the files exists
-			{
-
-				//make sure the file is an image...there might be a better way to do this
-				if (getimagesize($pathToFile) != FALSE) {
-					//add it to the array
-					$bgArray[$cnt] = $pathToFile;
-					$cnt           = $cnt+1;
-
-				}
-
-			}
-
+		if ($app["url"] != "" && $app["icon"] != "") {
+			writeLinkHtml($app["url"], $app["icon"], $app["text"], $app["style"]);
+		} else {
+			$success                      = writeSinglePointLinkHtml($spApps, $app['text'], $app['style']);
+			$renderedSpApps[$app['text']] = true;
 		}
-		//create a random number, then use the image whos key matches the number
-		$myRand = rand(0, ($cnt-1));
-		$val    = $bgArray[$myRand];
-
 	}
-	closedir($handle);
-	echo ('"'.$val.'"');
-
 }
-// END RANDOM BACKGROUND
 
 // Add remaining Singlepoint apps
 if ($spApps != null) {
@@ -344,14 +242,12 @@ if ($spApps != null) {
 		$app = $spApps[$i];
 		if ($renderedSpApps[$app["text"]] == false) {
 			$partialFileName = strtolower($app["text"]);
-			$imageFileName   = strtolower($partialFileName.".svg");
+			$imageFileName   = strtolower($partialFileName.".jpg");
 			writeLinkHtml($app["url"], $imageFileName, $app["text"], "");
 		}
 	}
 }
 ?>
-
-    </div>
     </div>
     <div id="controls" class="row">
       <div class="col-sm-12">
