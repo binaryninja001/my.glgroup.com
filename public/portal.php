@@ -160,7 +160,7 @@ function writeSinglePointLinkHtml($spApps, $appName, $style) {
 			$app = $spApps[$i];
 			if ($appName == $app['text']) {
 				$partialFileName = strtolower($app["text"]);
-				$imageFileName   = strtolower($partialFileName.".jpg");
+				$imageFileName   = strtolower($partialFileName.".svg");
 				writeLinkHtml($app["url"], $imageFileName, $app["text"], $style);
 				return true;
 			}
@@ -176,7 +176,7 @@ function writeLinkHtml($appUrl, $imageFileName, $appText, $style) {
 	$imgPath = "./img/";
 	$path    = $imgPath.$imageFileName;
 	if (!file_exists($path)) {
-		$path = $imgPath."default.png";
+		$path = $imgPath."default.svg";
 	}
 
 	//print icon image
@@ -342,7 +342,7 @@ if ($spApps != null) {
 		$app = $spApps[$i];
 		if ($renderedSpApps[$app["text"]] == false) {
 			$partialFileName = strtolower($app["text"]);
-			$imageFileName   = strtolower($partialFileName.".jpg");
+			$imageFileName   = strtolower($partialFileName.".svg");
 			writeLinkHtml($app["url"], $imageFileName, $app["text"], "");
 		}
 	}
