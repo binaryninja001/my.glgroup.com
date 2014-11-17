@@ -3,23 +3,17 @@
   margin-bottom: 20px;
 }
 
+html { 
+ 
+}
+
 .content-text {
   margin-top: 0.2em;
 }
 
-body{
-  font-family: 'Helvetica Nueu', Helvetica, sans-serif;
-  background: #EEE;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 1.6vh;
-  font-weight: 300;
-}
-
 a {
   text-decoration: none;
-  color: #585858;
+  color: white!important
 }
 
 a:hover {
@@ -36,25 +30,27 @@ a:hover {
   height: 62%;
   min-width: 30px;
   max-width: 130px;
-  opacity: .9;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
   transition-duration: 0.1s;
-  border-radius: 1.5vh;
+  /*border-radius: 1.5vh;*/
 }
 
 .icon img:hover {
-box-shadow: 1px 1px 10px #A8A8A8;
+/*box-shadow: 1px 1px 10px #A8A8A8;*/
 }
 
 #controls {
-  margin-top: 1vh;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .logout {
 background: #CECECE;
+color:black !important;
 border-radius: 3px;
 padding: 10px 20px;
+margin: 20px;
 width: 100px;
 -webkit-transition-duration: 0.2s;
 -moz-transition-duration: 0.2s;
@@ -64,7 +60,7 @@ border: solid 1px #ACACAC;
 
 a.logout:hover {
 background: #3a3c3d;
-color: #E9E9E9;
+color: white !important;
 border: solid 1px #1D1D1D;
 }
 
@@ -98,18 +94,18 @@ outline: none;
 }
 
 .old-pass {
-	border-radius: 0 0 9px 9px;
-	margin-top: -1px;
+  border-radius: 0 0 9px 9px;
+  margin-top: -1px;
 }
 
 .new-pass1 {
-	border-radius: 9px 9px 0 0;
-	margin-bottom: 0;
+  border-radius: 9px 9px 0 0;
+  margin-bottom: 0;
 }
 
 .new-pass2 {
-	border-radius: 0 0 9px 9px;
-	margin-top: -1px;
+  border-radius: 0 0 9px 9px;
+  margin-top: -1px;
 }
 
 .button {
@@ -145,7 +141,8 @@ outline: none;
 
 @media (max-width: 768px) {
   #title img {
-    width: 12vh;
+    width: 100%;
+    max-width: 40%;
   }
   body {
     font-size: 1.0em;
@@ -159,8 +156,8 @@ outline: none;
   }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .container {
-    width: 70vh;
+    width: 1500vh;
   }
-}
+}*/
