@@ -145,7 +145,7 @@ outline: none;
     max-width: 40%;
   }
   body {
-    text-align: center;
+    text-align: center !important;
     font-size: 1.0em;
   }
   .icon {
