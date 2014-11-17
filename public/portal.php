@@ -71,11 +71,18 @@
 <?php include_once ("analyticstracking.php")?>
 <div class="container">
   <div id="title" class="row">
-    <img src="img/glg-sso-logo.png"></img>
+    <img src="img/LOGO_MYGLG.svg"></img>
   </div>
 
-  <div id="icons" class="row">
-
+  <div id="icons_container" >
+    <div id="icons-background"><svg xmlns="http://www.w3.org/2000/svg"  version="1.1">
+<defs>
+<filter id="blur">
+<feGaussianBlur stdDeviation="5"/>
+</filter>
+</defs>
+</svg></div>
+      <div id="icons-themselves" class="row">
 <?php
 
 if (!function_exists('getallheaders')) {
@@ -341,6 +348,7 @@ if ($spApps != null) {
 	}
 }
 ?>
+    </div>
     </div>
     <div id="controls" class="row">
       <div class="col-sm-12">
