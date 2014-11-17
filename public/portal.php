@@ -13,6 +13,58 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style>
+  body, #icons-background
+  {
+  background: url(<?php displayBackground();?>) no-repeat center center fixed;
+  /*<?php displayBackground();?>*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: 'Helvetica Nueu', Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.6vh;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+  }
+
+#icons_container {
+  position: relative;
+}
+
+#icons-background {
+ /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  bottom: 0px;
+  left: -15px;
+  z-index: 99;
+  /* Pull the background 70px higher to the same place as #bg's */
+  background-position: center -0px;
+  padding: 0px;
+  margin: 0px!important;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  filter: url('#blur'); /* for Firefox */
+}
+
+#icons-themselves {
+    /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  background: rgb(0,0,0); /* for IE */
+  background: rgba(0,0,0,0.65);
+  padding-top: 3%;
+}
+
+  </style>
 </head>
 
 <body>
