@@ -4,11 +4,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="102.976px" height="102.976px" viewBox="0 0 102.976 102.976" enable-background="new 0 0 102.976 102.976"
 	 xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.4961" y1="29.6445" x2="103.4907" y2="96.9394">
-	<stop  offset="0" style="stop-color:#B23721"/>
-	<stop  offset="1" style="stop-color:#A5311C"/>
-</linearGradient>
-<rect fill="url(#SVGID_1_)" width="102.976" height="102.976"/>
+<rect fill="#E13F2B" width="102.976" height="102.976"/>
 <path opacity="0.3" fill="#442F37" d="M70.57,32.003c5.442,0,8.165,1.47,8.165,4.406c0,1.021-0.089,2.069-0.268,3.146L64.378,78.22
 	L49.303,37.758c-0.18-0.838-0.33-1.589-0.448-2.248c-0.121-0.659-0.18-1.258-0.18-1.799c0-1.139,1.016-1.708,3.051-1.708h4.127
 	v-2.691H31.624v2.691c3.469,0,6.071,1.919,7.807,5.752l20.551,51.769l3.051,0.63l21.537-53.388c1.077-3.174,2.661-4.764,4.756-4.764

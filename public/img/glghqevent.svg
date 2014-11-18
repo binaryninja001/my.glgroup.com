@@ -4,31 +4,33 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="102.977px" height="102.977px" viewBox="0 0 102.977 102.977" enable-background="new 0 0 102.977 102.977"
 	 xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="26.4951" y1="29.644" x2="103.4913" y2="96.9402">
-	<stop  offset="0" style="stop-color:#B23721"/>
-	<stop  offset="1" style="stop-color:#A5311C"/>
-</linearGradient>
-<rect fill="url(#SVGID_1_)" width="102.977" height="102.977"/>
 <g>
-	<path fill="#FAFAFA" d="M93.988,90.488c0,0.553-0.447,1-1,1h-83c-0.553,0-1-0.447-1-1v-69c0-0.553,0.447-1,1-1h83
-		c0.553,0,1,0.447,1,1V90.488z"/>
-	<path fill="#EF453E" d="M93.988,32.488c0,0.553-0.447,1-1,1h-83c-0.553,0-1-0.447-1-1v-19c0-0.553,0.447-1,1-1h83
-		c0.553,0,1,0.447,1,1V32.488z"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="51.4883" x2="102.9766" y2="51.4883">
+		<stop  offset="0" style="stop-color:#292526"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</linearGradient>
+	<rect fill="url(#SVGID_1_)" width="102.977" height="102.977"/>
+	<g>
+		<path fill="#FAFAFA" d="M93.988,90.488c0,0.553-0.447,1-1,1h-83c-0.553,0-1-0.447-1-1v-69c0-0.553,0.447-1,1-1h83
+			c0.553,0,1,0.447,1,1V90.488z"/>
+		<path fill="#EF453E" d="M93.988,32.488c0,0.553-0.447,1-1,1h-83c-0.553,0-1-0.447-1-1v-19c0-0.553,0.447-1,1-1h83
+			c0.553,0,1,0.447,1,1V32.488z"/>
+	</g>
+	<circle fill="#4A4A4A" cx="23.822" cy="22.821" r="3.333"/>
+	<circle fill="#4A4A4A" cx="79.822" cy="22.821" r="3.333"/>
+	<path fill="#FAFAFA" d="M80.822,22.488c0,1.288-1.045,2.333-2.333,2.333H25.155c-1.288,0-2.333-1.045-2.333-2.333l0,0
+		c0-1.289,1.045-2.334,2.333-2.334h53.334C79.777,20.154,80.822,21.199,80.822,22.488L80.822,22.488z"/>
+	<rect x="13.155" y="39.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="33.155" y="39.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="53.155" y="39.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="73.155" y="39.486" fill="#DFE0E1" width="15.999" height="13.333"/>
+	<rect x="13.155" y="56.486" fill="#DFE0E1" width="15.999" height="13.333"/>
+	<rect x="33.155" y="56.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="53.155" y="56.486" fill="#EF453E" width="15.999" height="13.333"/>
+	<rect x="73.155" y="56.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="13.155" y="73.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="33.155" y="73.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="53.155" y="73.486" fill="#4A4A4A" width="15.999" height="13.333"/>
+	<rect x="73.155" y="73.486" fill="#DFE0E1" width="15.999" height="13.333"/>
 </g>
-<circle fill="#4A4A4A" cx="23.822" cy="22.821" r="3.333"/>
-<circle fill="#4A4A4A" cx="79.822" cy="22.821" r="3.333"/>
-<path fill="#FAFAFA" d="M80.822,22.488c0,1.288-1.045,2.333-2.333,2.333H25.155c-1.288,0-2.333-1.045-2.333-2.333l0,0
-	c0-1.289,1.045-2.334,2.333-2.334h53.334C79.777,20.154,80.822,21.199,80.822,22.488L80.822,22.488z"/>
-<rect x="13.155" y="39.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="33.155" y="39.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="53.155" y="39.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="73.155" y="39.486" fill="#DFE0E1" width="15.999" height="13.333"/>
-<rect x="13.155" y="56.486" fill="#DFE0E1" width="15.999" height="13.333"/>
-<rect x="33.155" y="56.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="53.155" y="56.486" fill="#EF453E" width="15.999" height="13.333"/>
-<rect x="73.155" y="56.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="13.155" y="73.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="33.155" y="73.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="53.155" y="73.486" fill="#4A4A4A" width="15.999" height="13.333"/>
-<rect x="73.155" y="73.486" fill="#DFE0E1" width="15.999" height="13.333"/>
 </svg>
