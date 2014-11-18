@@ -48,7 +48,6 @@ a:hover {
 .logout {
 background: #CECECE;
 color:black !important;
-border-radius: 3px;
 padding: 10px 20px;
 margin: 20px;
 width: 100px;
@@ -84,27 +83,27 @@ outline: none;
 }
 
 .uname {
-  border-radius: 9px 9px 0 0;
+  /*border-radius: 9px 9px 0 0;*/
   margin-bottom: 0;
 }
 
 .pass {
-  border-radius: 0 0 9px 9px;
+  /*border-radius: 0 0 9px 9px;*/
   margin-top: -1px;
 }
 
 .old-pass {
-  border-radius: 0 0 9px 9px;
+  /*border-radius: 0 0 9px 9px;*/
   margin-top: -1px;
 }
 
 .new-pass1 {
-  border-radius: 9px 9px 0 0;
+  /*border-radius: 9px 9px 0 0;*/
   margin-bottom: 0;
 }
 
 .new-pass2 {
-  border-radius: 0 0 9px 9px;
+ /* border-radius: 0 0 9px 9px;*/
   margin-top: -1px;
 }
 
@@ -116,7 +115,6 @@ outline: none;
   font-size: 14px;
   margin-top: 10px;
   width: 200px;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -151,6 +149,43 @@ outline: none;
   .icon {
     height: 16.5vh;
     min-width: 25%;
+    min-height: 85px;
+    text-align: center;
+    padding: 0px 7px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #title img {
+    width: 100%;
+    max-width: 40%;
+  }
+  body {
+    text-align: center !important;
+    font-size: 1.0em;
+  }
+  .icon {
+    height: 14vh;
+    min-width: 25%;
+    min-height: 85px;
+    text-align: center;
+    padding: 0px 7px;
+  }
+}
+
+@media (max-width: 320px) {
+  #title img {
+    width: 100%;
+    max-width: 40%;
+  }
+  body {
+    text-align: center !important;
+    font-size: 1.0em;
+  }
+  .icon {
+    height: 13.5vh;
+    min-width: 32%;
     min-height: 85px;
     text-align: center;
     padding: 0px 7px;
