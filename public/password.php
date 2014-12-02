@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				}
 			} else {
 				$message = "Password was successfully changed!<br><br>";
-				$message = $message."<a href=\"http://my.glgroup.com\">Return to portal</a>";
+				$message = $message."<a href=\"http://my.glgroup.com\" style=\"color: #0000FF\">Return to portal</a>";
 				//console_log("Success changing your password. -- Message from admttu: " . $changeResult);
 			}
 		} catch (Exception $e) {

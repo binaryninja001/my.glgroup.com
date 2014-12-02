@@ -294,19 +294,18 @@ if (($uname != null && $uname != "error") && ($jsonApps["apps"] != null)) {
 		}
 	}
 	
-	// Print 'Reset Password' icon last
+	// Print 'Change Password' icon last
 	$urlencodeEmail = urlencode($email);
 	
-	$appText = "Reset Password";
+	$appText = "Change Password";
 	$appUrl = "password.php?singlepoint-auth-error=PASSWORD_CHANGE_REQUESTED&singlepoint-auth-user-name=".$urlencodeEmail;
-	//$path = "./img/reset_password.svg";
-	$path = "./img/default.svg";
+	$path = "./img/change_password.svg";
 	$style = "";
 	
-	//print 'Reset Password' icon image
+	//print 'Change Password' icon image
 	print("<div class=\"col-sm-2 icon col-xs-1\"><a rel=\"noreferrer\" href=\"".$appUrl."\" target=\"_blank\">"."<img style=\"".$style."\" src=\"".$path."\" onclick=\"ga('send','event', 'Outgoing Links','".$appText."','icon')\"></a><br>");
 
-	//print 'Reset Password' name text
+	//print 'Change Password' name text
 	print("<p class=\"content-text\"><a rel=\"noreferrer\" href=\"".$appUrl."\" target=\"_blank\" onclick=\"ga('send','event', 'Outgoing Links','".$appText."','text')\">".$appText."</a></p>"."</div>\n");
 }
 
@@ -368,7 +367,6 @@ if ($spApps != null) {
     <div id="controls" class="row">
       <div class="col-sm-12">
         <a href="https://my.glgroup.com/LogoutServlet" class="logout">Log Out</a>
-        <a href="password.php?singlepoint-auth-error=PASSWORD_CHANGE_REQUESTED&singlepoint-auth-user-name=<?php echo urlencode($email);?>" style="display:none">Change Password</a>
       </div>
     </div>
   </div>
