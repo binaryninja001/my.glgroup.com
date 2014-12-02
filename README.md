@@ -3,7 +3,7 @@
 A custom single sign-on (SSO) portal for [MyGLG](https://customsso.glgroup.com/public/portal.php) powered by [Symplified](http://www.symplified.com/features/single-sign-on/) + custom PHP, JavaScript, HTML, and CSS
 
 
-<i><b><u>IMPORTANT:</i></b></u> ***The production portal page makes API calls hosted in [Operations/admttu] (http://github.glgroup.com/Operations/admttu)***
+<i><b><u>IMPORTANT:</i></b></u> ***The production portal page makes API calls hosted in [Operations/admttu] (https://github.com/glg/admttu)***
 
 
 ## Local Development
