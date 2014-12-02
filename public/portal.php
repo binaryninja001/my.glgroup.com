@@ -293,6 +293,21 @@ if (($uname != null && $uname != "error") && ($jsonApps["apps"] != null)) {
 			$renderedSpApps[$app['text']] = true;
 		}
 	}
+	
+	// Print 'Reset Password' icon last
+	$urlencodeEmail = urlencode($email);
+	
+	$appText = "Reset Password";
+	$appUrl = "password.php?singlepoint-auth-error=PASSWORD_CHANGE_REQUESTED&singlepoint-auth-user-name=".$urlencodeEmail;
+	//$path = "./img/reset_password.svg";
+	$path = "./img/default.svg";
+	$style = "";
+	
+	//print 'Reset Password' icon image
+	print("<div class=\"col-sm-2 icon col-xs-1\"><a rel=\"noreferrer\" href=\"".$appUrl."\" target=\"_blank\">"."<img style=\"".$style."\" src=\"".$path."\" onclick=\"ga('send','event', 'Outgoing Links','".$appText."','icon')\"></a><br>");
+
+	//print 'Reset Password' name text
+	print("<p class=\"content-text\"><a rel=\"noreferrer\" href=\"".$appUrl."\" target=\"_blank\" onclick=\"ga('send','event', 'Outgoing Links','".$appText."','text')\">".$appText."</a></p>"."</div>\n");
 }
 
 //BEGIN RANDOM BACKGROUND
