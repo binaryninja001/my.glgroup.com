@@ -25,7 +25,7 @@
   background-position: center bottom;
   background-attachment: fixed;
   height: 100%;
-  font-family: 'Helvetica Nueu', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   text-align: center;
   font-size: 1.6vh;
   font-weight: 300;
@@ -275,8 +275,8 @@ if (strpos($referer, 'redirect_url') !== false) {
 }
 
 // Uncomment to emulate internal SSO app list
-// $spAppsText = file_get_contents('sso_example.json');
-// $spApps     = json_decode($spAppsText, true);
+//$spAppsText = file_get_contents('sso_example.json');
+//$spApps     = json_decode($spAppsText, true);
 
 // Add apps specified in portal_content.json
 $jsonAppsText   = file_get_contents('portal_content.json');

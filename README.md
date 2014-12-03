@@ -25,7 +25,7 @@ Local development has only been tested on OS X.
 
 3.  Confirm you can access the site by navigating to `http://localhost:8080/public/portal.php` with a web browser
 
-Much of the code in this repository relies on properties made avaialble by the `$_SERVER` variable, properties which are only available in a production environment.  When running locally, the command line interface (CLI) output may be helpful in determining what (if any) temporary code changes are needed to support local development.
+Much of the code in this repository relies on properties made avaialble by the `$_SERVER` variable, properties which are only available in a production environment.  When running locally, the command line interface (CLI) output may be helpful in determining what (if any) temporary code changes are needed to support local development. Look for 'Uncomment to emulate internal SSO app list' comment in portal.php and uncomment two lines.
 
 
 ## How To
