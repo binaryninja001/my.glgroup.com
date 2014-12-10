@@ -49,9 +49,9 @@
   background-position: center -0px;
   padding: 0px;
   margin: 0px!important;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
   filter: url('#blur'); /* for Firefox */
 }
 
