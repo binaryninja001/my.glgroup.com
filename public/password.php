@@ -130,6 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		//console_log("One of the required params was not provided. -- " . $params);
 	}
 } else {
+	$message = "Your password has expired.";
 	?>
 	<!-- next redirect parameter -->
 	<?php
@@ -142,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<!-- error message -->
 	<?php
 	// display authorization error
-	$error                                                  = NULL;
+	$error = NULL;
 	if (isset($_REQUEST["singlepoint-auth-error"])) {$error = $_REQUEST["singlepoint-auth-error"];}
 
 	if ($error != null) {

@@ -100,9 +100,9 @@ if ($error != null) {
 	} else if ($error == "NOT_AUTHENTICATED") {
 		$message = "Invalid login credentials.";
 	} else if ($error == "PASSWORD_RESET_REQUIRED") {
-		$message    = "Your password has expired.";
-		$query      = $_SERVER["QUERY_STRING"];
-		$url        = "password.php?".$query;
+		$message = "Your password has expired.";
+		$query = $_SERVER["QUERY_STRING"];
+		$url = "password.php?".$query;
 		$reset_pass = "<br><br>Click here to reset:<br><a href=\"".$url."\">Reset Password</a>";
 		//$message = $message . $reset_pass;
 		//$hd = "<br><br>Please contact Helpdesk for assistance.<br><a href=\"" . $url . "\" style=\"display:none\">Reset Password</a>";
@@ -142,5 +142,13 @@ if ($error != null) {
       },100);
     }
   });
+  
+  var searchTerms = window.location.search.slice(1).split('=');
+  var singlepointAuthErrorIndex = searchTerms.indexOf('singlepoint-auth-error');
+  if (singlepointAuthErrorIndex >= 0) {
+    if (searchTerms[singlepointAuthErrorIndex+1] == 'PASSWORD_RESET_REQUIRED') {
+      window.location.href = "password.php?singlepoint-auth-error=PASSWORD_RESET_REQUIRED";
+    }
+  }
 
 </script>
