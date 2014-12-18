@@ -12,6 +12,27 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+  <script type="text/javascript" src="lib/js/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/js/placeholders.js"></script>
+  <script>
+    $(function() {
+      if($.browser.msie){
+        setTimeout(function(){
+          $('input').blur();
+        },100);
+      }
+    });
+  
+    var searchTerms = window.location.search.slice(1).split(/&|=/g);
+    var singlepointAuthErrorIndex = searchTerms.indexOf('singlepoint-auth-error');
+    if (singlepointAuthErrorIndex >= 0) {
+      if (searchTerms[singlepointAuthErrorIndex+1] == 'PASSWORD_RESET_REQUIRED') {
+        window.location.href = "password.php?singlepoint-auth-error=PASSWORD_RESET_REQUIRED";
+      }
+    }
+  </script>
+
 </head>
 
 <body style="text-align: center;">
@@ -132,23 +153,3 @@ if ($error != null) {
 
 </body>
 </html>
-<script type="text/javascript" src="lib/js/jquery.min.js"></script>
-<script type="text/javascript" src="lib/js/placeholders.js"></script>
-<script>
-  $(function() {
-    if($.browser.msie){
-      setTimeout(function(){
-        $('input').blur();
-      },100);
-    }
-  });
-  
-  var searchTerms = window.location.search.slice(1).split(/&|=/g);
-  var singlepointAuthErrorIndex = searchTerms.indexOf('singlepoint-auth-error');
-  if (singlepointAuthErrorIndex >= 0) {
-    if (searchTerms[singlepointAuthErrorIndex+1] == 'PASSWORD_RESET_REQUIRED') {
-      window.location.href = "password.php?singlepoint-auth-error=PASSWORD_RESET_REQUIRED";
-    }
-  }
-
-</script>
