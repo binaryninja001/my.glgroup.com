@@ -143,7 +143,7 @@ if ($error != null) {
     }
   });
   
-  var searchTerms = window.location.search.slice(1).split('=');
+  var searchTerms = window.location.search.slice(1).split(/&|=/g);
   var singlepointAuthErrorIndex = searchTerms.indexOf('singlepoint-auth-error');
   if (singlepointAuthErrorIndex >= 0) {
     if (searchTerms[singlepointAuthErrorIndex+1] == 'PASSWORD_RESET_REQUIRED') {
