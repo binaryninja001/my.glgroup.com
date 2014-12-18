@@ -130,7 +130,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		//console_log("One of the required params was not provided. -- " . $params);
 	}
 } else {
-	$message = "Your password has expired.";
 	?>
 	<!-- next redirect parameter -->
 	<?php
@@ -152,15 +151,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		} else if ($error == "NOT_AUTHENTICATED") {
 			$message = "Invalid login credentials.";
 		} else if ($error == "PASSWORD_RESET_REQUIRED") {
+			$message = "Your password has expired.";
 			$fieldsNeeded = true;
 
-			$sp_user_name                                                      = "";
+			$sp_user_name = "";
 			if (isset($_REQUEST["singlepoint-auth-user-name"])) {$sp_user_name = $_REQUEST["singlepoint-auth-user-name"];}
 		} else if ($error == "PASSWORD_CHANGE_REQUESTED") {
 			$fieldsNeeded  = true;
 			$userRequested = "true";
 
-			$sp_user_name                                                      = "";
+			$sp_user_name = "";
 			if (isset($_REQUEST["singlepoint-auth-user-name"])) {$sp_user_name = $_REQUEST["singlepoint-auth-user-name"];}
 		} else {
 			$message = "An unknown error occurred.<br><br>Please contact Helpdesk.";
