@@ -6,6 +6,11 @@
             "icon": "vega.svg"
         },
         {
+            "text": "Consultation",
+            "url": "services.glgresearch.com/consultations/",
+            "icon": "consultation.svg"
+        },
+        {
             "text": "Salesforce"
         },
         {
