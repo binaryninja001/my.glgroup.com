@@ -87,12 +87,12 @@
             "text": "Zoom"
         },
         {
+            "text": "eForms"
+        },
+        {
             "text": "Consultation",
             "url": "http://services.glgresearch.com/consultations/",
             "icon": "consultation.svg"
-        },
-        {
-            "text": "eForms"
         },
         {
             "text": "RoomFinder"
