@@ -6,11 +6,6 @@
             "icon": "vega.svg"
         },
         {
-            "text": "Consultation",
-            "url": "http://services.glgresearch.com/consultations/",
-            "icon": "consultation.svg"
-        },
-        {
             "text": "Salesforce"
         },
         {
@@ -90,6 +85,11 @@
         },
         {
             "text": "Zoom"
+        },
+        {
+            "text": "Consultation",
+            "url": "http://services.glgresearch.com/consultations/",
+            "icon": "consultation.svg"
         },
         {
             "text": "eForms"
