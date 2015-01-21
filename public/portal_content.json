@@ -98,6 +98,11 @@
             "text": "RoomFinder"
         },
         {
+            "text": "Baristagram",
+            "url": "http://services.glgresearch.com/baristagram/",
+            "icon": "baristagram.svg"
+        },
+        {
             "text": "<span style='color: rgb(250,50,25);'>&#149;</span>&nbsp;App Store&nbsp;&nbsp;",
             "url": "https://services.glgresearch.com/apps",
             "icon": "appstore.svg"

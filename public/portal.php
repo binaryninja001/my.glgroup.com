@@ -375,3 +375,4 @@ if ($spApps != null) {
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/human-resources.js"></script>
+<script src="js/baristagram.js"></script>
