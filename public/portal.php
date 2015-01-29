@@ -60,7 +60,7 @@
   position: relative;
   z-index: 100;
   background: rgb(128,128,128); /* for IE */
-  background: rgba(128,128,128,0.45);
+  background: rgba(128,128,128,0.65);
   padding-top: 3%;
 }
 
