@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <style>
-  body, #icons-background
+  body
   {
   background: url(<?php displayBackground();?>) no-repeat center center fixed;
   /*<?php displayBackground();?>*/
