@@ -91,7 +91,7 @@
         },
         {
             "text": "Consultations",
-            "url": "http://services.glgresearch.com/consultations/",
+            "url": "https://services.glgresearch.com/consultations/",
             "icon": "consultation.svg"
         },
         {
@@ -99,7 +99,7 @@
         },
         {
             "text": "Baristagram",
-            "url": "http://services.glgresearch.com/baristagram/",
+            "url": "https://services.glgresearch.com/baristagram/",
             "icon": "baristagram.svg"
         },
         {
