@@ -6,6 +6,11 @@
             "icon": "vega.svg"
         },
         {
+            "text": "Consultations",
+            "url": "https://services.glgresearch.com/consultations/",
+            "icon": "consultation.svg"
+        },
+        {
             "text": "Salesforce"
         },
         {
@@ -88,11 +93,6 @@
         },
         {
             "text": "eForms"
-        },
-        {
-            "text": "Consultations",
-            "url": "https://services.glgresearch.com/consultations/",
-            "icon": "consultation.svg"
         },
         {
             "text": "RoomFinder"
