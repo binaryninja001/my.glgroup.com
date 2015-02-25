@@ -40,7 +40,7 @@
         },
         {
             "text": "Taxonomy",
-            "url": "http://services.glgresearch.com/taxonomy/index.html",
+            "url": "https://services.glgresearch.com/taxonomy/index.html",
             "icon": "taxonomy.svg",
             "style": "border: none;"
         },
@@ -52,7 +52,7 @@
         },
         {
             "text": "CMTravel",
-            "url": "http://services.glgresearch.com/cm-travel-plans/",
+            "url": "https://services.glgresearch.com/cm-travel-plans/",
             "icon": "cm_travel.svg"
         },
         {
