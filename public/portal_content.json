@@ -111,6 +111,11 @@
             "text": "Compliance Compass",
             "url": "http://services.glgresearch.com/compliance-compass/",
             "icon": "compliancecompass.svg"
+        },
+        {
+            "text": "Group Outreach Tool",
+            "url": "https://outreach.glgroup.com/#/home",
+            "icon": "outreach.svg"
         }
     ]
 }
