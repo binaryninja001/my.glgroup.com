@@ -27,7 +27,7 @@ $(function() {
 	if (cookieValue == "Gurgaon" || cookieValue == "Mumbai") {
 	    $('a[href$="human-resources/en-us/"]:first').attr("href", " http://services.glgresearch.com/human-resources/en-us/?page_id=2324");
 	}
-	if (cookieValue == "Shanghai" || cookieValue == "Beijing") {
+	if (cookieValue == "Shanghai" || cookieValue == "Beijing" || cookieValue == "Shenzhen") {
 	    $('a[href$="human-resources/en-us/"]:first').attr("href", "http://services.glgresearch.com/human-resources/en-us/?page_id=2639");
 	}
 	if (cookieValue == "Paris" || cookieValue == "Dubai" || cookieValue == "Munich") {
