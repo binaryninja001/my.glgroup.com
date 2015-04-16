@@ -57,7 +57,7 @@
         },
         {
             "text": "Human Resources",
-            "url": "http://services.glgresearch.com/human-resources/en-us/",
+            "url": "https://services.glgresearch.com/human-resources/en-us/",
             "icon": "glg_hr.svg"
         },
         {
@@ -109,7 +109,7 @@
         },
         {
             "text": "Compliance Compass",
-            "url": "http://services.glgresearch.com/compliance-compass/",
+            "url": "https://services.glgresearch.com/compliance-compass/",
             "icon": "compliancecompass.svg"
         },
         {

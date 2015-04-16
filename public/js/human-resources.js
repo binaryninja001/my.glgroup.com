@@ -13,24 +13,24 @@ $(function() {
 	var cookieValue = readCookie('glgOffice')
 
 	if (cookieValue == "New_York_850" || cookieValue == "New_York_-_850" || cookieValue == "NY" || cookieValue == "New_York" || cookieValue == "New_York_845" || cookieValue == "Austin" || cookieValue == "Boston" || cookieValue == "San_Francisco" || cookieValue == "SF" || cookieValue == "Chicago" || cookieValue == "Washington_DC" || cookieValue == "Los_Angeles" || cookieValue == "LA") {
-	    $('a[href$="human-resources/en-us/"]:first').attr("href", "http://services.glgresearch.com/human-resources/en-us/?page_id=4");
+	    $('a[href$="human-resources/en-us/"]:first').attr("href", "https://services.glgresearch.com/human-resources/en-us/?page_id=4");
 	}
 	if (cookieValue == "London") {
-	    $('a[href$="human-resources/en-us/"]:first').attr("href", "http://services.glgresearch.com/human-resources/en-us/?page_id=2326");
+	    $('a[href$="human-resources/en-us/"]:first').attr("href", "https://services.glgresearch.com/human-resources/en-us/?page_id=2326");
 	}
 	if (cookieValue == "Singapore" || cookieValue == "Hong_Kong" || cookieValue == "Seoul" || cookieValue == "Tokyo" || cookieValue == "Sydney") {
-	    $('a[href$="human-resources/en-us/"]:first').attr("href", "http://services.glgresearch.com/human-resources/en-us/?page_id=2319");
+	    $('a[href$="human-resources/en-us/"]:first').attr("href", "https://services.glgresearch.com/human-resources/en-us/?page_id=2319");
 	}
 	if (cookieValue == "Dublin" || cookieValue == "DUB") {
-	    $('a[href$="human-resources/en-us/"]:first').attr("href", "http://services.glgresearch.com/human-resources/en-us/?page_id=2333");
+	    $('a[href$="human-resources/en-us/"]:first').attr("href", "https://services.glgresearch.com/human-resources/en-us/?page_id=2333");
 	}
 	if (cookieValue == "Gurgaon" || cookieValue == "Mumbai") {
-	    $('a[href$="human-resources/en-us/"]:first').attr("href", " http://services.glgresearch.com/human-resources/en-us/?page_id=2324");
+	    $('a[href$="human-resources/en-us/"]:first').attr("href", " https://services.glgresearch.com/human-resources/en-us/?page_id=2324");
 	}
 	if (cookieValue == "Shanghai" || cookieValue == "Beijing" || cookieValue == "Shenzhen") {
-	    $('a[href$="human-resources/en-us/"]:first').attr("href", "http://services.glgresearch.com/human-resources/en-us/?page_id=2639");
+	    $('a[href$="human-resources/en-us/"]:first').attr("href", "https://services.glgresearch.com/human-resources/en-us/?page_id=2639");
 	}
 	if (cookieValue == "Paris" || cookieValue == "Dubai" || cookieValue == "Munich") {
-	  $('a[href$="human-resources/en-us/"]:first').attr("href", "http://services.glgresearch.com/human-resources/en-us/?page_id=2659");
+	  $('a[href$="human-resources/en-us/"]:first').attr("href", "https://services.glgresearch.com/human-resources/en-us/?page_id=2659");
 	}
 });
